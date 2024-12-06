@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+            padding-top: 50px;
+        }
+        .server {
+            font-size: 24px;
+            color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Load Balancer Test</h1>
+    <p>You are currently connected to:</p>
+    <div class="server">Server 1</div>
+    <p>Timestamp: <span id="timestamp"></span></p>
+
+    <script>
+        document.getElementById("timestamp").innerText = new Date().toLocaleString();
+    </script>
+</body>
+</html>
